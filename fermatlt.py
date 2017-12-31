@@ -26,5 +26,6 @@ if __name__ == "__main__":
     p=int(argv[1])
     if p<3:
         print "[ERR] Girilen sayi 2den buyuk olmali!"
+        exit(1)
     isPrime(findA(p),p)
 
