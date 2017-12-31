@@ -1,20 +1,11 @@
 #!/usr/bin/python
 #-*- coding: utf8 -*-
 import fractions
-import random
+import random 
 from sys import argv
 
 def findA(primeNum):
     while True:
-        if primeNum==0:
-            print "Lutfen asal sayi nedir biraz oku..."
-            exit(1)
-        if primeNum==1:
-            print "%d asal olabilir." %primeNum
-            exit(1)
-        if primeNum==2:
-            print "%d asal degildir." %primeNum
-            exit(1)
         a = int(random.randint(2, primeNum))
         check = fractions.gcd(a, primeNum)
         if check == 1:
@@ -28,9 +19,12 @@ def isPrime(a,p):
         print "[OK] %d asal degildir." %p
 
 if __name__ == "__main__":
-    if len(argv)>2:
-        print "[ERR] Fazla arguman girildi!"
+    if len(argv)<2:
+        print "[ERR] Eksik argüman girildi!"
         print "[INFO] Doğru kullanım : python fermatlt.py <test edilecek sayi>"
         exit(1)
     p=int(argv[1])
+    if p<3:
+        print "[ERR] Girilen sayi 2den buyuk olmali!"
     isPrime(findA(p),p)
+
