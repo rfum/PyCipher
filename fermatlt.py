@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #-*- coding: utf8 -*-
 import fractions
-import random 
+import random
 from sys import argv
 
 def findA(primeNum):
@@ -12,11 +12,10 @@ def findA(primeNum):
             return a
 
 def isPrime(a,p):
-    print "[INFO] A sayisi: %d" %a
     if (pow(findA(p),p-1,p)) == 1:
-        print "[OK] %d asal olabilir." %p
+        return 1
     else:
-        print "[OK] %d asal degildir." %p
+        return -1
 
 if __name__ == "__main__":
     if len(argv)<2:
@@ -27,5 +26,11 @@ if __name__ == "__main__":
     if p<3:
         print "[ERR] Girilen sayi 2den buyuk olmali!"
         exit(1)
-    isPrime(findA(p),p)
-
+    if isPrime(findA(p),p)==1:
+        print "[INFO] A sayisi: %d" %findA(p)
+        print "[OK] %d asal olabilir." %p
+        exit(1)
+    if isPrime(findA(p),p)==-1:
+        print "[INFO] A sayisi: %d" %findA(p)
+        print "[OK] %d asal degildir." %p
+        exit(1)
