@@ -2,9 +2,10 @@
 2017 Yılı İnformasyon Güvenliği ve Kriptoloji dersi kapsamında verilen ödevlerin Python 2.7 çözümleri.
 
 Algoritmalar:
+
 Sayılar Teorisi :
 - Genişletilmiş Öklid Teoremi
-- Lineer ahenk(congruence)
+- Lineer denklik
 - Miller-Rabin Asallık Testi
 - Solovay-Strassen Asallık Testi
 - Fermat Kucuk Teoremi Asallik Testi
