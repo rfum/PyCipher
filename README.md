@@ -10,6 +10,7 @@ Sayılar Teorisi :
 - Solovay-Strassen Asallık Testi
 - Fermat Kucuk Teoremi Asallik Testi
 - Euler's Criterion ile Quadratic Residue Testi
+- Legendre Sembolu
 
 Simetrik Şifreleme:
 - Shift Şifreleme

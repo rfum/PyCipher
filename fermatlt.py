@@ -19,7 +19,7 @@ def isPrime(a,p):
 
 if __name__ == "__main__":
     if len(argv)<2:
-        print "[ERR] Eksik argüman girildi!"
+        print "[ERR] Eksik parametreler var!"
         print "[INFO] Doğru kullanım : python fermatlt.py <test edilecek sayi>"
         exit(1)
     p=int(argv[1])
