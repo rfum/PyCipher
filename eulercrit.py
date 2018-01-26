@@ -10,12 +10,17 @@ def eulerCrit(a,p):
         print "[INFO] {} sayisi, {} sayisi icin quadratic residue degildir!".format(a, p)
 
 if __name__ == "__main__":
-    if len(argv)<3:
-        print "[ERR] Eksik parametreler var!"
+    if len(argv)!=3:
+        print "[ERR] Hatali parametreler var!"
         print "[INFO] Doğru kullanım : python eulercrit.py <asal moduler ust sinir> <quadratic residue>"
         print "[INFO] Istege Bagli : python eulercrit.py [--list|-l] <moduler ust sinir>"
         exit(1)
     if (argv[1]=="--list" or argv[1]=="-l"):
+        if ((argv[2].isdigit()) != True):
+            print "[ERR] Hatali parametreler var!"
+            print "[INFO] Doğru kullanım : python eulercrit.py <asal moduler ust sinir> <quadratic residue>"
+            print "[INFO] Istege Bagli : python eulercrit.py [--list|-l] <moduler ust sinir>"
+            exit(1)
         p=int(argv[2])
         i=0
         j=0
@@ -32,6 +37,11 @@ if __name__ == "__main__":
             i=i+1
         uniqueList = sorted(uniqueList)
         print ", ".join([str(x) for x in uniqueList])
+        exit(1)
+    if ((argv[1].isdigit()) and (argv[2].isdigit())) != True:
+        print "[ERR] Hatali parametreler var!"
+        print "[INFO] Doğru kullanım : python eulercrit.py <asal moduler ust sinir> <quadratic residue>"
+        print "[INFO] Istege Bagli : python eulercrit.py [--list|-l] <moduler ust sinir>"
         exit(1)
     p=int(argv[1])
     a=int(argv[2])
