@@ -10,12 +10,41 @@ def eulerCrit(a,p):
         print "[INFO] {} sayisi, {} sayisi icin quadratic residue degildir!".format(a, p)
 
 if __name__ == "__main__":
+    if len(argv)!=3:
+        print "[ERR] Hatali parametreler var!"
+        print "[INFO] Doğru kullanım : python eulercrit.py <asal moduler ust sinir> <quadratic residue>"
+        print "[INFO] Istege Bagli : python eulercrit.py [--list|-l] <moduler ust sinir>"
+        exit(1)
+    if (argv[1]=="--list" or argv[1]=="-l"):
+        if ((argv[2].isdigit()) != True):
+            print "[ERR] Hatali parametreler var!"
+            print "[INFO] Doğru kullanım : python eulercrit.py <asal moduler ust sinir> <quadratic residue>"
+            print "[INFO] Istege Bagli : python eulercrit.py [--list|-l] <moduler ust sinir>"
+            exit(1)
+        p=int(argv[2])
+        i=0
+        j=0
+        primeSquaredList= []
+        uniqueList = []
+        if p<2:
+            print "Girilen sayi icin quadratic residue bulunmamaktadir."
+            exit(1)
+        for num in range(1,p):
+            primeSquaredList.append(pow(num,2,p))
+            if ((primeSquaredList[i] not in uniqueList) and primeSquaredList[i] != 0):
+                uniqueList.append(primeSquaredList[i])
+                j=j+1
+            i=i+1
+        uniqueList = sorted(uniqueList)
+        print ", ".join([str(x) for x in uniqueList])
+        exit(1)
+    if ((argv[1].isdigit()) and (argv[2].isdigit())) != True:
+        print "[ERR] Hatali parametreler var!"
+        print "[INFO] Doğru kullanım : python eulercrit.py <asal moduler ust sinir> <quadratic residue>"
+        print "[INFO] Istege Bagli : python eulercrit.py [--list|-l] <moduler ust sinir>"
+        exit(1)
     p=int(argv[1])
     a=int(argv[2])
-    if len(argv)<3:
-        print "[ERR] Eksik argüman girildi!"
-        print "[INFO] Doğru kullanım : python eulercrit.py <test edilecek asal sayi> <test edilecek quadratic residue>"
-        exit(1)
     if p<3:
         print "[ERR] p sayisi 3'ten kucuk bir asal sayi(even prime) olamaz!"
         exit(1)
