@@ -1,6 +1,4 @@
 
-2017 Yılı İnformasyon Güvenliği ve Kriptoloji dersi kapsamında verilen ödevlerin Python 2.7 çözümleri.
-
 Algoritmalar:
 
 Sayılar Teorisi :
