@@ -1,6 +1,5 @@
 # -*- coding:utf-8 -*-
-# Ramazan Furkan MATARACI, 1306151324
-# Toprak KESKIN, 1306160200
+
 from random import sample
 from string import ascii_lowercase,lower
 from sys import argv

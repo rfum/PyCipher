@@ -1,6 +1,5 @@
 # -*-coding:utf8
 # !/usr/bin/env python
-# Ramazan Furkan MATARACI, 1306151324
 
 import fractions
 from random import getrandbits, randrange

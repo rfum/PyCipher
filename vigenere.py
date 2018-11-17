@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# Ramazan Furkan MATARACI 1306151324
 from string import ascii_lowercase
 from string import lower
 from sys import argv

@@ -1,7 +1,6 @@
 #!/usr/bin/python3.5
 #-*-coding:utf8-*-
-#Ramazan Furkan Mataracı 1306151324
-#Toprak Olga Keskin 1306160200
+
 from ext_gcd import ext_gcd
 # gcd m a = 1
 
