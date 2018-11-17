@@ -1,7 +1,5 @@
 
 # -*- coding: utf-8 -*-
-# Ramazan Furkan MATARACI, 1306151324
-# Toprak KESKIN, 1306160200
 from string import ascii_uppercase
 from ext_gcd import ext_gcd
 from sys import argv
