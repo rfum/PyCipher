@@ -1,7 +1,7 @@
 
-Algoritmalar:
+# Algoritmalar:
 
-Sayılar Teorisi :
+## Sayılar Teorisi :
 - Genişletilmiş Öklid Teoremi
 - Lineer denklik
 - Miller-Rabin Asallık Testi
@@ -10,13 +10,13 @@ Sayılar Teorisi :
 - Euler's Criterion ile Quadratic Residue Testi
 - Legendre Sembolu
 
-Simetrik Şifreleme:
+## Simetrik Şifreleme:
 - Shift Şifreleme
 - Vigenere Şifreleme
 - Affine Şifreleme
 - Substitution Şifreleme
 - Diffie-Hellman Anahtar Değişimi
 
-Asimetrik Şifreleme :
+## Asimetrik Şifreleme :
 - RSA Şifreleme
 - Al-Gamal Şifreleme
