@@ -1,22 +1,22 @@
 
-# Algoritmalar:
+# Algorithms:
 
-## Sayılar Teorisi :
-- Genişletilmiş Öklid Teoremi
-- Lineer denklik
-- Miller-Rabin Asallık Testi
-- Solovay-Strassen Asallık Testi
-- Fermat Kucuk Teoremi Asallik Testi
-- Euler's Criterion ile Quadratic Residue Testi
-- Legendre Sembolu
+## Numbers Theory :
+- Extended Euclide Theorem
+- Linear equivalence
+- Miller-Rabin prime number test
+- Solovay-Strassen prime number test
+- Fermat Kucuk Teoremi prime number test
+- Quadratic Residue test with Euler's Criterion 
+- Legendre symbol
 
-## Simetrik Şifreleme:
-- Shift Şifreleme
-- Vigenere Şifreleme
-- Affine Şifreleme
-- Substitution Şifreleme
-- Diffie-Hellman Anahtar Değişimi
+## Symmetrical Ciphers:
+- Shift ciphering
+- Vigenere ciphering
+- Affine ciphering
+- Substitution ciphering
+- Diffie-Hellman key exchange algorithm
 
-## Asimetrik Şifreleme :
-- RSA Şifreleme
-- Al-Gamal Şifreleme
+## Asymmetrical Ciphering :
+- RSA
+- Al-Gamal
